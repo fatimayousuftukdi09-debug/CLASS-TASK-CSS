@@ -1,0 +1,126 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    padding: 10px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-size: 38px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #0b3d91;
+     text-shadow:
+        1px 1px 0 #7a7a7a,
+        2px 2px 0 #5f5f5f,
+        3px 3px 5px rgba(0,0,0,0.25);
+}
+
+h1::before{
+    content: "✈ ";
+}
+
+h1::after{
+    content: " ✈";
+}
+p{
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+.subtitle{
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse; /*Double borders ko remove karke clean border banayega. */
+    background-color: white; /*Table ke neeche halka shadow aayega.*/
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 10px; /*Table ke corners round ho jayenge.*/
+    overflow: hidden; /*corners ko properly round dikhayega.*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow:
+         0 8px 20px rgba(0,0,0,0.12),
+        0 2px 6px rgba(13,71,161,0.15);
+    transition: 0.3s ease;
+}
+table:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px rgba(13,71,161,0.25);
+}
+th{
+    background-color: #0b3d91;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase; /*Sab headings CAPITAL LETTERS mein dikhengi.*/
+    border-bottom: 50px solid white;
+}
+th:hover{
+    background-color: #062b66;
+}
+td{
+    padding: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+table,
+th,
+td{
+    border: 1px solid #ddd; /*Table aur har cell ke around halka gray border aa jayega.*/
+}
+tr:nth-child(even){
+    background-color: #f8f9fa; /*Har doosri row ka color halka gray ho jayega.*/
+}
+tbody tr:hover{
+    background-color: #e8f2ff;
+    cursor: pointer;
+    transition: 0.3s; /*Hover effect smooth lagega, achanak color change nahi hoga.*/
+}
+.on-time::before{
+    content: "🟢 ";
+}
+
+.delayed::before{
+    content: "🔴 ";
+}
+
+.boarding::before{
+    content: "🟡 ";
+}
+
+.cancelled::before{
+    content: "⚫ ";
+}
+.view-btn{
+    background-color: #0b3d91;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-btn:hover{
+    background-color: #062b66;
+    transform: scale(1.05);
+}
+footer{
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer p{
+    color: #555;
+    font-size: 15px;
+}
